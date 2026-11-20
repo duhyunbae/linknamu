@@ -2,6 +2,7 @@
 
 export type LinkItem = {
   id: string;
+  emoji?: string;
   title: string;
   url: string;
   description?: string;
@@ -15,27 +16,27 @@ export type Profile = {
 };
 
 export const profile: Profile = {
-  name: "김클로",
-  bio: "세계 최강 바이브코더",
-  imageUrl: "/profile-placeholder.svg",
+  name: "배선생",
+  bio: "Product Manager | Ph.D. in EE | Twins Father",
+  imageUrl: "/me.jpg",
   links: [
     {
       id: "github",
-      title: "GitHub",
-      url: "https://github.com/",
-      description: "코드 저장소",
-    },
-    {
-      id: "linkedin",
-      title: "LinkedIn",
-      url: "https://www.linkedin.com/",
-      description: "경력 및 이력",
+      emoji: "💻",
+      title: "깃허브",
+      url: "https://github.com/duhyunbae",
     },
     {
       id: "blog",
-      title: "Blog",
-      url: "https://example.com/",
-      description: "개발 블로그",
+      emoji: "✍️",
+      title: "블로그",
+      url: "https://blog.naver.com/duhyun",
+    },
+    {
+      id: "linkedin",
+      emoji: "💼",
+      title: "링크드인",
+      url: "https://www.linkedin.com/in/두현-배-7631149b",
     },
   ],
 };
